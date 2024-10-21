@@ -1,0 +1,39 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "it's a starter project",
+  "main": "app.ts",
+  "author": "ramkrishna",
+  "license": "MIT",
+  "scripts": {
+    "start": "dotenv -e .env node ./dist/src/app.js",
+    "dev": "dotenv -e .env nodemon",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.675.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv-cli": "^7.4.2",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.2",
+    "multer": "^1.4.5-lts.1",
+    "node-input-validator": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.7.7",
+    "@types/nodemailer": "^6.4.16",
+    "@types/otp-generator": "^4.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
