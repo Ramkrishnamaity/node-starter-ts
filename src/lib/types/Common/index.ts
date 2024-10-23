@@ -10,7 +10,6 @@ export type ReqWithAuth<T = Record<string, any>> = T & {
     _id: string
 }
 
-
 declare module "express" {
     interface Request {
         user?: ReqWithAuth;

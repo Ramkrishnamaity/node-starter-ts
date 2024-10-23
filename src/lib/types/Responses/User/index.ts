@@ -1,9 +1,6 @@
 export type ProfileResponceType = {
-    about: string
-    firstName: string
-    lastName: string
+    name: string
     email: string
     image: string
-    deviceToken: string
     updatedAt: Date
 }

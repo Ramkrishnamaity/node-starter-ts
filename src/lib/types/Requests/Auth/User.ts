@@ -1,12 +1,9 @@
 
-
 export type RegisterRequestType = {
-    firstName: string
-    lastName: string
+    name: string
     email: string
     password: string
     image?: string
-    otp: string
 }
 
 export type LoginRequestType = {

@@ -1,11 +1,8 @@
-import { Router } from "express"
-import UserProfileController from "../controllers/user/Profile"
+import { Router } from "express";
+import UserProfileController from "../controllers/user/Profile";
 
+const ApiRouter: Router = Router();
 
-const UserRouter: Router = Router()
+ApiRouter.get("/profile", UserProfileController.getUserProfile);
 
-
-UserRouter.get("/profile", UserProfileController.getUserProfile)
-
-
-export default UserRouter
+export default ApiRouter;
